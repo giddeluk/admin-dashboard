@@ -8,3 +8,28 @@
     padding: 0;
     font-family: san francisco;
 }
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
+}
+.sidebar{
+    background-color: green;
+    color: white;
+}
+.header{
+    background-color: red;
+    color: white;
+}
+.projects{
+    background-color: blue;
+    color: white;
+}
+.announcements{
+    background-color: purple;
+    color: white;
+}
+.trending{
+    background-color: brown;
+    color: white;
+}
