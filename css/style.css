@@ -54,20 +54,90 @@ margin-left: 3px;
 /* Header */
 .header {
   display: grid;
-  grid-template-columns: 2fr 1.5fr;
+  grid-template-columns: 3fr 1.5fr;
   grid-template-rows: 1fr 1fr;
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: black;
   grid-area: header;
   gap: 3px;
   padding: 10px;
   align-items: center;
   justify-content: center;
 }
+.search-div{
+  display: flex;
+  align-items: center;
+}
+.search-div > input{
+  border-radius: 10px;
+  width: 80%;
+  background-color: #E2E8F0;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.search-div > svg{
+  width: 5%;
+  height: auto;
+  fill: black;
+}
+.profile-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile-div > div > svg{
+  fill: black;
+  width: 100%;
+}
+.profile-one{
+  width: 10%;
+}
+.profile-two{
+  display: flex;
+  flex-direction: column;
+}
+.profile-two p:nth-child(1){
+  font-weight: bolder;
+}
+.profile-two p:nth-child(2){
+  font-weight: bolder;
+  font-size: 120%;
+}
+
+.alert-div{
+  display: flex;
+  justify-content: space-evenly;
+}
+.alert-div > svg{
+  width: 10%;
+}
+.alert-div > p{
+  font-weight: bolder;
+}
+.buttons-div{
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons-div > button{
+  width: 25%;
+  color: white;
+  background-color: #1992d4;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  font-size: 110%;
+}
 /* Projects */
 .projects {
   color: white;
   grid-area: projects;
+}
+#your-projects-text{
+  color: black;
+  font-weight: bold;
+  font-size: 130%;
+  margin: 5px;
 }
 .project > .card{
     background-color: white;
