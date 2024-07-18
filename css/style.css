@@ -22,25 +22,49 @@
     gap: 5px;
 }
 .sidebar {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   background-color: #1992d4;
   color: white;
-  align-items: center;
-  justify-items: left;
   grid-area: sidebar;
 }
-
+.sidebar-div{
+  padding: 10px;
+}
+.sidebar-item{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.sidebar-item > svg{
+  width: 7%;
+  height: auto;
+  fill: white;
+}
+.sidebar-item > p{
+margin-left: 3px;
+}
+.sidebar-div:nth-child(1) p{
+  font-weight: bolder;
+  font-size: 150%;
+}
+.sidebar-div p{
+  font-weight: bolder;
+}
+/* Header */
 .header {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1.5fr;
   grid-template-rows: 1fr 1fr;
   background-color: red;
   color: white;
   grid-area: header;
   gap: 3px;
+  padding: 10px;
   align-items: center;
+  justify-content: center;
 }
+/* Projects */
 .projects {
   color: white;
   grid-area: projects;
