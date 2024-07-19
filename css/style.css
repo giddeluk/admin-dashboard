@@ -19,7 +19,7 @@
     "sidebar projects projects announcements"
     "sidebar projects projects trending";
   background-color: #e2e8f0;
-  gap: 10px;
+  gap: 1%;
 }
 .sidebar {
   display: flex;
@@ -141,8 +141,9 @@
 }
 .project {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1%;
+  overflow: auto;
 }
 .project > .card {
   background-color: white;
@@ -171,6 +172,30 @@
   flex-direction: column;
   align-items: center;
 }
+/* Card section */
+.project > .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d7d7d7;
+}
+.project-svgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5%;
+  margin-right: 5%;
+}
+.project-svgs > svg {
+  fill: #1d1d1d;
+  width: 10%;
+}
+.project > .card > p:nth-child(1) {
+  font-size: 115%;
+  font-weight: bold;
+}
+.project > .card > p:nth-child(2) {
+  color: #808080;
+}
 .card {
   width: 80%;
 }
@@ -185,20 +210,20 @@
   grid-area: trending;
   border-radius: 10px;
 }
-.trending-cards{
+.trending-cards {
   margin: 10%;
 }
-.trending-card{
+.trending-card {
   display: flex;
 }
-.trending-card > p{
+.trending-card > p {
   display: block;
 }
-.trending-cards img{
+.trending-cards img {
   width: 20%;
   height: auto;
 }
-.trending-card-names{
+.trending-card-names {
   display: flex;
   flex-direction: column;
 }
