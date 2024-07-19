@@ -18,8 +18,8 @@
     "sidebar projects projects announcements"
     "sidebar projects projects announcements"
     "sidebar projects projects trending";
-    background-color: #E2E8F0;
-    gap: 5px;
+  background-color: #e2e8f0;
+  gap: 10px;
 }
 .sidebar {
   display: flex;
@@ -28,27 +28,27 @@
   color: white;
   grid-area: sidebar;
 }
-.sidebar-div{
+.sidebar-div {
   padding: 10px;
 }
-.sidebar-item{
+.sidebar-item {
   display: flex;
   align-items: center;
   margin: 10px;
 }
-.sidebar-item > svg{
+.sidebar-item > svg {
   width: 7%;
   height: auto;
   fill: white;
 }
-.sidebar-item > p{
-margin-left: 3px;
+.sidebar-item > p {
+  margin-left: 3px;
 }
-.sidebar-div:nth-child(1) p{
+.sidebar-div:nth-child(1) p {
   font-weight: bolder;
   font-size: 150%;
 }
-.sidebar-div p{
+.sidebar-div p {
   font-weight: bolder;
 }
 /* Header */
@@ -64,62 +64,62 @@ margin-left: 3px;
   align-items: center;
   justify-content: center;
 }
-.search-div{
+.search-div {
   display: flex;
   align-items: center;
 }
-.search-div > input{
+.search-div > input {
   border-radius: 10px;
   width: 80%;
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
   border: none;
   outline: none;
   padding: 5px;
 }
-.search-div > svg{
+.search-div > svg {
   width: 5%;
   height: auto;
   fill: black;
 }
-.profile-div{
+.profile-div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.profile-div > div > svg{
+.profile-div > div > svg {
   fill: black;
   width: 100%;
 }
-.profile-one{
+.profile-one {
   width: 10%;
 }
-.profile-two{
+.profile-two {
   display: flex;
   flex-direction: column;
 }
-.profile-two p:nth-child(1){
+.profile-two p:nth-child(1) {
   font-weight: bolder;
 }
-.profile-two p:nth-child(2){
+.profile-two p:nth-child(2) {
   font-weight: bolder;
   font-size: 120%;
 }
 
-.alert-div{
+.alert-div {
   display: flex;
   justify-content: space-evenly;
 }
-.alert-div > svg{
+.alert-div > svg {
   width: 10%;
 }
-.alert-div > p{
+.alert-div > p {
   font-weight: bolder;
 }
-.buttons-div{
+.buttons-div {
   display: flex;
   justify-content: space-evenly;
 }
-.buttons-div > button{
+.buttons-div > button {
   width: 25%;
   color: white;
   background-color: #1992d4;
@@ -133,34 +133,80 @@ margin-left: 3px;
   color: white;
   grid-area: projects;
 }
-#your-projects-text{
+#your-projects-text {
   color: black;
   font-weight: bold;
   font-size: 130%;
   margin: 5px;
 }
-.project > .card{
-    background-color: white;
-    color: black;
-    border: 1px solid grey;
-    padding: 3px;
-    border-radius: 10px;
-}
 .project {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.project > .card {
+  background-color: white;
+  color: black;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 10px;
 }
 .announcements {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: purple;
-  color: white;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
   grid-area: announcements;
+}
+.announcements > p {
+  color: black;
+  font-weight: bold;
+  font-size: 130%;
+  padding: 5px;
+  margin-left: 10%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  width: 80%;
+}
+.card p {
+  padding: 5px;
 }
 .trending {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: brown;
-  color: white;
+  background-color: white;
+  color: black;
   grid-area: trending;
+  border-radius: 10px;
+}
+.trending-cards{
+  margin: 10%;
+}
+.trending-card{
+  display: flex;
+}
+.trending-card > p{
+  display: block;
+}
+.trending-cards img{
+  width: 20%;
+  height: auto;
+}
+.trending-card-names{
+  display: flex;
+  flex-direction: column;
+}
+.trending > p {
+  color: black;
+  font-weight: bold;
+  font-size: 130%;
+  padding: 5px;
+  margin-left: 10%;
+  display: block;
 }
