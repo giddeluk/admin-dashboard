@@ -19,12 +19,12 @@
     "sidebar projects projects announcements"
     "sidebar projects projects trending";
   background-color: #e2e8f0;
-  gap: 1%;
+  gap: 5px;
 }
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #1992d4;
+  background-color: #5a0b4d;
   color: white;
   grid-area: sidebar;
 }
@@ -63,6 +63,7 @@
   padding: 10px;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #d7d7d7;
 }
 .search-div {
   display: flex;
@@ -122,7 +123,7 @@
 .buttons-div > button {
   width: 25%;
   color: white;
-  background-color: #1992d4;
+  background-color: #5a0b4d;
   padding: 5px;
   border: none;
   border-radius: 15px;
@@ -163,7 +164,28 @@
 .announcements > p {
   color: black;
   font-weight: bold;
-  font-size: 130%;
+  font-size: 130%;/* Media queries */
+@media only screen and (max-width: 800px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20vh 1.5fr 1.5fr 1.5fr;
+    grid-template-areas:
+      "sidebar sidebar sidebar sidebar"
+      "header header header header"
+      "project projects projects projects"
+      "announcements announcements trending trending";
+    background-color: #e2e8f0;
+    gap: 1%;
+  }
+  .project{
+    overflow: visible;
+  }
+  .sidebar{
+    overflow: auto;
+  }
+}
+
   padding: 5px;
   margin-left: 10%;
 }
@@ -186,7 +208,28 @@
   margin-right: 5%;
 }
 .project-svgs > svg {
-  fill: #1d1d1d;
+  fill: #1d1d1d;/* Media queries */
+@media only screen and (max-width: 800px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20vh 1.5fr 1.5fr 1.5fr;
+    grid-template-areas:
+      "sidebar sidebar sidebar sidebar"
+      "header header header header"
+      "project projects projects projects"
+      "announcements announcements trending trending";
+    background-color: #e2e8f0;
+    gap: 1%;
+  }
+  .project{
+    overflow: visible;
+  }
+  .sidebar{
+    overflow: auto;
+  }
+}
+
   width: 10%;
 }
 .project > .card > p:nth-child(1) {
@@ -201,6 +244,9 @@
 }
 .card p {
   padding: 5px;
+}
+.card p:nth-child(2){
+  color: #808080;
 }
 .trending {
   display: grid;
@@ -234,4 +280,7 @@
   padding: 5px;
   margin-left: 10%;
   display: block;
+}
+.trending-card-names p:nth-child(2){
+  color: #808080;
 }
